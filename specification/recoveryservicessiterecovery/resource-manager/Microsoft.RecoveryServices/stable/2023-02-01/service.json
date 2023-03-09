@@ -11655,16 +11655,20 @@
         "extendedLocationMappings": {
           "description": "A value indicating whether the Extended Location mappings are to be returned.",
           "type": "string",
+          "enum": [
+            "ExtendedLocationMappings eq 'true'",
+            "ExtendedLocationMappings eq 'false'"
+          ],
           "x-ms-enum": {
             "name": "ExtendedLocationMappingsState",
             "modelAsString": true,
             "values": [
               {
-                "value": "LocationDetails eq true",
+                "value": "ExtendedLocationMappings eq 'true'",
                 "description": "Filter expression to include extendedLocationMappings."
               },
               {
-                "value": "LocationDetails eq false",
+                "value": "ExtendedLocationMappings eq 'false'",
                 "description": "Filter expression to exclude extendedLocationMappings."
               }
             ]
@@ -11673,16 +11677,20 @@
         "locationDetails": {
           "description": "A value indicating whether the location details are to be returned.",
           "type": "string",
+          "enum": [
+            "LocationDetails eq 'true'",
+            "LocationDetails eq 'false'"
+          ],
           "x-ms-enum": {
             "name": "LocationDetailsState",
             "modelAsString": true,
             "values": [
               {
-                "value": "LocationDetails eq true",
+                "value": "LocationDetails eq 'true'",
                 "description": "Filter expression to include locationDetails."
               },
               {
-                "value": "LocationDetails eq false",
+                "value": "LocationDetails eq 'false'",
                 "description": "Filter expression to exclude locationDetails."
               }
             ]
