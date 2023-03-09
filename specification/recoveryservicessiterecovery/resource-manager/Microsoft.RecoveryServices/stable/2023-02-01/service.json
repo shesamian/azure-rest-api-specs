@@ -11654,11 +11654,39 @@
         },
         "extendedLocationMappings": {
           "description": "A value indicating whether the Extended Location mappings are to be returned.",
-          "type": "string"
+          "type": "string",
+          "x-ms-enum": {
+            "name": "ExtendedLocationMappingsState",
+            "modelAsString": true,
+            "values": [
+              {
+                "value": "LocationDetails eq true",
+                "description": "Filter expression to include extendedLocationMappings."
+              },
+              {
+                "value": "LocationDetails eq false",
+                "description": "Filter expression to exclude extendedLocationMappings."
+              }
+            ]
+          }
         },
         "locationDetails": {
           "description": "A value indicating whether the location details are to be returned.",
-          "type": "string"
+          "type": "string",
+          "x-ms-enum": {
+            "name": "LocationDetailsState",
+            "modelAsString": true,
+            "values": [
+              {
+                "value": "LocationDetails eq true",
+                "description": "Filter expression to include locationDetails."
+              },
+              {
+                "value": "LocationDetails eq false",
+                "description": "Filter expression to exclude locationDetails."
+              }
+            ]
+          }
         },
         "fetchAgentDetails": {
           "description": "A value indicating whether the agent details are to be fetched.",
